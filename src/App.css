@@ -22,6 +22,8 @@ main {
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__img {
@@ -31,7 +33,7 @@ main {
 }
 
 .card__info {
-  padding: 2rem;
+  padding: 2rem 2rem 0;
 }
 
 .card__title {
@@ -40,7 +42,32 @@ main {
 }
 
 .card__body {
-  margin: 1rem 0 2rem;
+  margin: 1rem 0;
   font-size: 1.1rem;
   color: var(--desat-dk-blue);
+}
+
+@media (min-width: 600px) {
+  main {
+    position: relative;
+  }
+
+  .card {
+    flex-direction: row;
+    max-width: 55rem;
+  }
+
+  .card__img {
+    width: 20rem;
+    height: auto;
+    object-position: left;
+  }
+
+  .card__info {
+    padding: 2rem 3rem 0;
+  }
+
+  .card__title {
+    font-size: 1.5rem;
+  }
 }

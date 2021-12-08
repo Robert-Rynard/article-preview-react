@@ -9,16 +9,18 @@ function App() {
     <main>
       <article className="card">
         <img className="card__img" src={drawer} alt="green dresser" />
-        <div className="card__info">
-          <h2 className="card__title">
-            Shift the overall look and feel by adding these wonderful touches to
-            furniture in your home
-          </h2>
-          <p className="card__body">
-            Ever been in a room and felt like something was missing? Perhaps it
-            felt slightly bare and uninviting. I’ve got some simple tips to help
-            you make any room feel complete.
-          </p>
+        <div className="card__text">
+          <div className="card__info">
+            <h2 className="card__title">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h2>
+            <p className="card__body">
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
           <User name="Michelle Appleton" date="28 Jun 2020" img={profilePic} />
         </div>
       </article>
