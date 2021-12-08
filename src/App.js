@@ -9,7 +9,7 @@ function App() {
     <main>
       <article className="card">
         <img className="card__img" src={drawer} alt="green dresser" />
-        <div className="card__text">
+        <div>
           <div className="card__info">
             <h2 className="card__title">
               Shift the overall look and feel by adding these wonderful touches
